@@ -5,7 +5,7 @@ export const projects = [
     title: "FurniSpace",
     description:
       "Fully functional e-commerce website with sorting and filtering algorithms, responsive layout, modern design",
-    imageUrl: "/public/pngs/1.PNG",
+    imageUrl: "/pngs/1.PNG",
     stack: ["React.js", "Tailwind", "Firebase"],
     link: "https://furnish-two.vercel.app/",
   },
@@ -13,7 +13,7 @@ export const projects = [
     title: "StayFinder",
     description:
       "A modern hotel booking platform that allows users to search for accommodations based on price, availability, and location. Features include a sleek UI, a seamless booking experience, dark mode, and an intuitive filter system for budget-friendly stays.",
-    imageUrl: "/public/pngs/stayfinder.PNG",
+    imageUrl: "/pngs/stayfinder.PNG",
     stack: ["Next.js", "Tailwind", "Supabase"],
     link: "https://stayfinder-five.vercel.app/",
   },
@@ -21,7 +21,7 @@ export const projects = [
     title: "Ecad",
     description:
       "A dynamic e-commerce admin dashboard designed to manage products, orders, and sales analytics efficiently. Built with a modern tech stack, it includes real-time sales tracking, order management, and an intuitive interface for business owners.",
-    imageUrl: "/public/pngs/ecad.PNG",
+    imageUrl: "/pngs/ecad.PNG",
     stack: ["Next.js", "Javascript", "Tailwind", "Supabase"],
     link: "https://ecad-beta.vercel.app/dashboard",
   },
@@ -65,27 +65,27 @@ export const tags = [
 export const tools = [
   {
     title: "Vanilla JS",
-    imageUrl: "/public/pngs/js.png",
+    imageUrl: "/pngs/js.png",
     description: "logic and small enhancements.",
   },
   {
     title: "React.js",
-    imageUrl: "/public/pngs/react.png",
+    imageUrl: "/pngs/react.png",
     description: "framework for building UIs.",
   },
   {
     title: "Tailwind CSS",
-    imageUrl: "/public/pngs/tailwind.png",
+    imageUrl: "/pngs/tailwind.png",
     description: "styling with speed and consistency.",
   },
   {
     title: "Git",
-    imageUrl: "/public/pngs/git.png",
+    imageUrl: "/pngs/git.png",
     description: "version control and project management.",
   },
   {
     title: "Typescript",
-    imageUrl: "/public/typescript.svg",
+    imageUrl: "/typescript.svg",
     description: "Type safety and improved development.",
   },
 ];
