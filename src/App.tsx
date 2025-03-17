@@ -6,9 +6,7 @@ import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ToolsSection from "./sections/ToolsSection";
 import ContactSection from "./sections/ContactSection";
-
-// Splash Screen Component
-
+import { Analytics } from "@vercel/analytics/react";
 const App = () => {
   return (
     <>
@@ -27,6 +25,7 @@ const App = () => {
             </main>
           </div>
         </div>
+        <Analytics />
       </main>
     </>
   );
