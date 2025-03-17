@@ -1,11 +1,9 @@
-import { Link } from "lucide-react";
-
 export const projects = [
   {
     title: "FurniSpace",
     description:
       "Fully functional e-commerce website with sorting and filtering algorithms, responsive layout, modern design",
-    imageUrl: "/pngs/furnish.png",
+    imageUrl: "/furnish.png",
     stack: ["React.js", "Tailwind", "Firebase"],
     link: "https://furnish-two.vercel.app/",
   },
@@ -13,7 +11,7 @@ export const projects = [
     title: "StayFinder",
     description:
       "A modern hotel booking platform that allows users to search for accommodations based on price, availability, and location. Features include a sleek UI, a seamless booking experience, dark mode, and an intuitive filter system for budget-friendly stays.",
-    imageUrl: "/pngs/stayfinder.png",
+    imageUrl: "/stayfinder.png",
     stack: ["Next.js", "Tailwind", "Supabase"],
     link: "https://stayfinder-five.vercel.app/",
   },
@@ -21,7 +19,7 @@ export const projects = [
     title: "Ecad",
     description:
       "A dynamic e-commerce admin dashboard designed to manage products, orders, and sales analytics efficiently. Built with a modern tech stack, it includes real-time sales tracking, order management, and an intuitive interface for business owners.",
-    imageUrl: "/pngs/ecad.png",
+    imageUrl: "/ecad.png",
     stack: ["Next.js", "Javascript", "Tailwind", "Supabase"],
     link: "https://ecad-beta.vercel.app/dashboard",
   },
@@ -76,7 +74,7 @@ export const tools = [
   },
   {
     title: "Typescript",
-    imageUrl: "/TypeScript.svg",
+    imageUrl: "/typescript.svg",
     description: "Type safety and improved development.",
   },
   {
