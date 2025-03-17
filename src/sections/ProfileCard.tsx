@@ -26,7 +26,7 @@ const ProfileCard = () => {
     >
       <div
         ref={tiltRef}
-        className="w-80 max-lg:w-[600px] max-md:w-[350px] h-fit max-lg:h-fit bg-brighterHighlight rounded-xl flex items-start flex-shrink-0 overflow-hidden px-4 py-8 top-16 mb-8 sticky"
+        className="w-80 max-lg:w-[600px] max-md:w-[350px] h-fit  bg-brighterHighlight rounded-xl flex items-start flex-shrink-0 overflow-hidden px-4 py-8 top-16 mb-8 sticky"
       >
         <div className="flex flex-col justify-center items-center space-y-8">
           <h1 className="text-3xl font-poppins font-[750] text-center rounded-sm border-primary px-1 border-l-4 w-fit mx-auto">

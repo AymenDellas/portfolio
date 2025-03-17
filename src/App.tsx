@@ -14,7 +14,7 @@ const App = () => {
     <>
       <main>
         <Navbar />
-        <div className="mx-80 mt-16 max-lg:mx-2 justify-center flex flex-row max-lg:flex-col">
+        <div className="mx-80 mt-16 max-lg:mx-8 justify-center flex flex-row max-lg:flex-col">
           <div className="flex max-lg:flex-col max-lg:space-x-0 space-x-16">
             <div>
               <ProfileCard />

@@ -1,8 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "motion/react";
-
 import { ArrowUpRight } from "lucide-react";
-
 import { projects } from "../comps/main";
 
 const ProjectsSection = () => {
@@ -45,32 +43,44 @@ const ProjectsSection = () => {
       className={`min-h-screen scroll-mt-20 ${isVisible ? "active" : ""}`}
     >
       <div>
-        <h1 className="font-bold text-7xl text-highlight">
+        <h1 className="font-bold text-7xl max-lg:text-5xl text-highlight">
           RECENT{" "}
-          <span className="text-brighterHighlight/50 block">PROJETS</span>
+          <span className="text-brighterHighlight/50 block">PROJECTS</span>
         </h1>
-        {projects.map((project: any) => (
-          <div
-            onClick={() => window.open(`${project.link}`, "_blank")}
-            className="flex transition-colors hover:bg-brighterHighlight/10 rounded-lg my-8 p-4 items-center relative group cursor-pointer "
-          >
-            <ArrowUpRight className="absolute w-12 top-3 right-3 text-brighterHighlight group-hover:top-2 group-hover:-right-1 duration-300 transition-all" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
+          {projects.slice(0, 3).map((project: any) => (
             <div
-              style={{
-                backgroundImage: `url(${project.imageUrl})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-              className="flex-shrink-0 w-24 aspect-square bg-cover bg-left rounded-lg"
-            ></div>
-            <div className="mx-8 max-lg:mx-4 space-y-4">
-              <h1 className="text-highlight font-bold text-xl">
-                {project.title}
-              </h1>
-              <p className="text-brighterHighlight/50">{project.description}</p>
+              key={project.id}
+              className="flex flex-col transition-colors hover:bg-brighterHighlight/10 rounded-lg p-4 items-start relative group cursor-pointer"
+            >
+              <div
+                style={{
+                  backgroundImage: `url(${project.imageUrl})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                className="flex-shrink-0 w-full h-48 bg-cover rounded-lg"
+              ></div>
+              <div className="mt-4 space-y-2">
+                <h1 className="text-highlight font-bold text-xl">
+                  {project.title}
+                </h1>
+                <p className="text-brighterHighlight/70 text-sm">
+                  {project.description.length > 100
+                    ? `${project.description.substring(0, 100)}...`
+                    : project.description}
+                </p>
+              </div>
+              <a
+                href={`${project.link}`}
+                target="_blank"
+                className="mt-2 text-blue-500 hover:underline"
+              >
+                Go Live <ArrowUpRight className="inline w-4 h-4" />
+              </a>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </motion.section>
   );

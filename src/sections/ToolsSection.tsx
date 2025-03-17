@@ -41,10 +41,10 @@ const ToolsSection = () => {
       id="stacks"
       className={`min-h-screen scroll-mt-20 ${isVisible ? "active" : ""}`}
     >
-      <h1 className="text-7xl font-bold text-highlight">
+      <h1 className="text-7xl max-lg:text-5xl font-bold text-highlight">
         WHAT <span className="block text-brighterHighlight/50">I USE</span>
       </h1>
-      <div className="grid grid-cols-2 gap-4 my-8">
+      <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-4 my-8">
         {tools.map((tool: any) => (
           <motion.div
             className="flex bg-brighterHighlight/10 rounded-lg px-2 py-3 cursor-pointer items-center
