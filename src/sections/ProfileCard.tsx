@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { Github, Instagram, Linkedin } from "lucide-react";
 import VanillaTilt from "vanilla-tilt";
 import { tags } from "../comps/main";
+
 const ProfileCard = () => {
   const tiltRef = useRef(null);
   useEffect(() => {
@@ -68,9 +69,20 @@ const ProfileCard = () => {
             impactful web experiences.
           </p>
           <div className="flex space-x-1 items-center">
-            <Github className=" text-secondary" size={25} />
-            <Instagram className=" text-secondary" size={25} />*
-            <Linkedin className=" text-secondary" size={25} />
+            <a href="https://github.com/AymenDellas" target="_blank">
+              {" "}
+              <Github className=" text-secondary" size={25} />
+            </a>
+
+            <a href="https://www.instagram.com/aymenx.dev/" target="_blank">
+              <Instagram className=" text-secondary" size={25} />
+            </a>
+            <a
+              href="www.linkedin.com/in/dellas-aymen-5833b7339"
+              target="_blank"
+            >
+              <Linkedin className=" text-secondary" size={25} />
+            </a>
           </div>
           <a
             href="#contactt"
