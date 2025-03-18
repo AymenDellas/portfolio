@@ -74,15 +74,16 @@ const Form = () => {
     }
 
     if (!recaptchaValue) {
-      alert("Enter the capatcha");
+      alert("Enter the captcha");
       return;
     }
 
     try {
       setIsSubmiting(true);
 
+      // Change this to your Formspree endpoint
       const response = await fetch(
-        "https://send.pageclip.co/xpM6WMoHlMAaSQJqE7zhctRKt6YnyZPt/contact-form",
+        "https://formspree.io/f/xvgkglab", // Replace YOUR_FORM_ID with your actual form ID
         {
           method: "POST",
           headers: {
@@ -94,12 +95,14 @@ const Form = () => {
 
       if (!response.ok) {
         setStatus("error sending the data");
+        setIsSubmiting(false);
+        return;
       }
 
       setIsSubmiting(false);
       setShowMessage(true);
 
-      // Hide the success message after 3 seconds
+      // Hide the success message after 5 seconds
       setTimeout(() => {
         setShowMessage(false);
       }, 5000);
@@ -110,16 +113,16 @@ const Form = () => {
       setEmail("");
       setMessage("");
     } catch (error) {
-      console.error("Error:", error); // Log the error
-      setIsSubmiting(false); // Reset the submission state
+      console.error("Error:", error);
+      setIsSubmiting(false);
     }
   };
 
   return (
     <form
-      method="post"
+      method="POST"
       onSubmit={handleSubmit}
-      action="https://send.pageclip.co/xpM6WMoHlMAaSQJqE7zhctRKt6YnyZPt"
+      action="https://formspree.io/f/xvgkglab"
       className="pageclip-form flex flex-col  my-8 relative"
     >
       {isSubmiting ? (
