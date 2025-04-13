@@ -42,7 +42,7 @@ const ContactSection = () => {
       className={`min-h-screen scroll-mt-20 ${isVisible ? "active" : ""}`}
     >
       <div>
-        <h1 className="text-7xl max-lg:text-5xl font-bold text-highlight">
+        <h1 className="text-5xl max-lg:text-3xl font-bold text-highlight">
           LET'S <span className="block text-brighterHighlight/50">CONNECT</span>
         </h1>
 

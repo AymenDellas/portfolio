@@ -8,18 +8,18 @@ export default {
         pattern2: `url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233c2a21' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");`,
       },
       utilities: {
-        '.perspective-1000': {
-          perspective: '1000px'
+        ".perspective-1000": {
+          perspective: "1000px",
         },
-        '.transform-style-3d': {
-          transformStyle: 'preserve-3d'
-        }
+        ".transform-style-3d": {
+          transformStyle: "preserve-3d",
+        },
       },
       colors: {
-        primary: "#1A120B",
-        secondary: "#3C2A21",
-        highlight: "#D5CEA3",
-        brighterHighlight: "#E5E5CB",
+        primary: "#121212",
+        secondary: "#2D2D2D",
+        highlight: "#A67C52",
+        brighterHighlight: "#D4B483",
       },
       fontFamily: {
         poppings: ["Poppins", "sans-serif"],

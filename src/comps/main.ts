@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "FurniSpace",
+    title: "SmileCare",
     description:
-      "Fully functional e-commerce website with sorting and filtering algorithms, responsive layout, modern design",
-    imageUrl: "/furnish.png",
-    stack: ["React.js", "Tailwind", "Firebase"],
-    link: "https://furnish-two.vercel.app/",
+      "Modern dental clinic website with appointment scheduling, service information and responsive layout.",
+    imageUrl: "/smilecare_shot.png",
+    stack: ["React.js", "Tailwind"],
+    link: "https://smilecare-nine.vercel.app/",
   },
   {
     title: "StayFinder",

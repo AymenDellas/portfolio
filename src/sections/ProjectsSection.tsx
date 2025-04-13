@@ -43,15 +43,15 @@ const ProjectsSection = () => {
       className={`min-h-screen scroll-mt-20 ${isVisible ? "active" : ""}`}
     >
       <div>
-        <h1 className="font-bold text-7xl max-lg:text-5xl text-highlight">
+        <h1 className="font-bold text-5xl max-lg:text-3xl text-highlight">
           RECENT{" "}
           <span className="text-brighterHighlight/50 block">PROJECTS</span>
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
+        <div className="grid grid-cols-1  gap-6 my-8">
           {projects.slice(0, 3).map((project: any) => (
             <div
               key={project.id}
-              className="flex flex-col transition-colors hover:bg-brighterHighlight/10 rounded-lg p-4 items-start relative group cursor-pointer"
+              className="flex space-x-4 transition-colors hover:bg-brighterHighlight/10 rounded-lg p-4 items-start relative group cursor-pointer"
             >
               <div
                 style={{
@@ -59,25 +59,23 @@ const ProjectsSection = () => {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-                className="flex-shrink-0 w-full h-48 bg-cover rounded-lg"
+                className="flex-shrink-0 w-1/3 h-48 bg-cover rounded-lg"
               ></div>
               <div className="mt-4 space-y-2">
-                <h1 className="text-highlight font-bold text-xl">
+                <h1 className="text-highlight font-bold text-xl flex flex-col">
                   {project.title}
                 </h1>
                 <p className="text-brighterHighlight/70 text-sm">
-                  {project.description.length > 100
-                    ? `${project.description.substring(0, 100)}...`
-                    : project.description}
+                  {project.description}
                 </p>
+                <a
+                  href={`${project.link}`}
+                  target="_blank"
+                  className="mt-auto text-blue-500 hover:underline"
+                >
+                  Go Live <ArrowUpRight className="inline w-4 h-4" />
+                </a>
               </div>
-              <a
-                href={`${project.link}`}
-                target="_blank"
-                className="mt-2 text-blue-500 hover:underline"
-              >
-                Go Live <ArrowUpRight className="inline w-4 h-4" />
-              </a>
             </div>
           ))}
         </div>

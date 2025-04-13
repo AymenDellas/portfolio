@@ -41,7 +41,7 @@ const ToolsSection = () => {
       id="stacks"
       className={`min-h-screen scroll-mt-20 ${isVisible ? "active" : ""}`}
     >
-      <h1 className="text-7xl max-lg:text-5xl font-bold text-highlight">
+      <h1 className="text-5xl max-lg:text-3xl font-bold text-highlight">
         WHAT <span className="block text-brighterHighlight/50">I USE</span>
       </h1>
       <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-4 my-8">
