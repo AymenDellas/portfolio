@@ -73,13 +73,13 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row max-lg:items-center my-4 justify-between gap-3 relative max-lg:mx-4">
           <div className="card w-full flex-1 max-h-[200px] aspect-video rounded-xl bg-pattern bg-amber-800 flex flex-col px-2 space-y-6 shadow-lg py-4">
             <img src="/design.svg" alt="" className="w-12" />
-            <h1 className="text-3xl font-bold text-brighterHighlight">
+            <h1 className="max-xl:text-2xl xl:text-3xl font-bold text-brighterHighlight">
               INNOVATIVE DESIGN, INTERACTIVE UX
             </h1>
           </div>
           <div className="card w-full flex-1 max-h-[200px] aspect-video rounded-xl bg-pattern2 bg-[length:30%_30%] bg-[#86A788] flex flex-col px-2 py-4 space-y-6 shadow-lg">
             <img src="/concept.svg" alt="" className="w-12" />
-            <h1 className="text-3xl font-bold text-secondary">
+            <h1 className="max-xl:text-2xl xl:text-3xl font-bold text-secondary">
               CONCEPT TO PRODUCT, DONE RIGHT
             </h1>
             <div className="blob absolute aspect-[9/16] w-52 rounded-full bottom-0 left-0 -z-10 bg-brighterHighlight/40"></div>

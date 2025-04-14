@@ -19,7 +19,7 @@ const App = () => {
       </AnimatePresence>
       <main>
         <Navbar />
-        <div className="mx-64 mt-16 max-lg:mx-8 justify-center flex flex-row max-lg:flex-col">
+        <div className="lg:mx-20 xl:mx-32 2xl:mx-56 mt-16 mx-8 justify-center flex flex-row max-lg:flex-col">
           <div className="flex max-lg:flex-col max-lg:space-x-0 space-x-16">
             <div>
               <ProfileCard />
