@@ -47,7 +47,7 @@ const ProjectsSection = () => {
           RECENT{" "}
           <span className="text-brighterHighlight/50 block">PROJECTS</span>
         </h1>
-        <div className="flex flex-col justify-center my-8">
+        <div className="flex flex-col justify-center my-8 space-y-4">
           {projects.slice(0, 3).map((project: any) => (
             <div
               key={project.id}
