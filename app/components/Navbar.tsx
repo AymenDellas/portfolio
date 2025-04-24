@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpened, setIsOpened] = useState(false);
   return (
     <nav className="fixed z-50">
       {/* Desktop Navigation */}
