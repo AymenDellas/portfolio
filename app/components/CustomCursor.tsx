@@ -38,9 +38,9 @@ const CustomCursor = () => {
         transition: "all 0.15s ease-out",
         willChange: "transform",
       }}
-      className={`fixed bg-white pointer-events-none rounded-full  transform -translate-x-1/2 -translate-y-1/2 mix-blend-difference z-[99999] max-lg:hidden ${
-        isProjectHovered ? "w-36 h-12" : " w-5 h-5 "
-      } ${isLinkHovered && "w-24 h-24"} ${isTextHovered && "w-14 h-14"}`}
+      className={`fixed bg-white pointer-events-none rounded-full w-5 h-5 transform -translate-x-1/2 -translate-y-1/2 mix-blend-difference z-[99999] max-lg:hidden ${
+        isProjectHovered && "w-36 h-12  shadow-lg"
+      } ${isLinkHovered && "w-24 h-24 "} ${isTextHovered && "w-14 h-14 "}`}
     >
       {isProjectHovered && (
         <span className="flex justify-center items-center font-bold h-full">

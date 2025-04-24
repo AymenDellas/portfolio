@@ -14,7 +14,7 @@ const Projects = () => {
         Projects
       </h1>
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center  lg:space-x-20 w-[95%] lg:w-[85%] xl:w-[70%] mx-auto">
-        <article className=" mt-64 max-lg:m-4 ">
+        <article data-cursor-hover className=" mt-64 max-lg:m-4 ">
           {" "}
           {projects.slice(2, 4).map((project) => {
             return (
@@ -31,7 +31,9 @@ const Projects = () => {
                   </p>
                   <code>{project.id}</code>
                 </div>
+
                 <h2 className="text-2xl font-bold">{project.title}</h2>
+
                 <p>{project.description}</p>
 
                 <h4 className="text-sm">FEATURES</h4>
@@ -51,20 +53,12 @@ const Projects = () => {
                       return <li>{tech}</li>;
                     })}
                   </ul>
-                  <Link
-                    data-cursor-hover
-                    href={project.link}
-                    target="_blank"
-                    className={`rounded-lg p-1 ${project.color} hover:bg-black/20 transition-all hover:shadow-md duration-200 ease-out`}
-                  >
-                    <ArrowUpRight />
-                  </Link>
                 </div>
               </div>
             );
           })}
         </article>
-        <article className=" max-lg:m-4">
+        <article data-cursor-hover className=" max-lg:m-4">
           {projects.slice(0, 2).map((project) => {
             return (
               <div
@@ -100,7 +94,6 @@ const Projects = () => {
                     })}
                   </ul>
                   <Link
-                    data-cursor-hover
                     href={project.link}
                     target="_blank"
                     className={`rounded-lg p-1 ${project.color} hover:bg-black/20 transition-all hover:shadow-md duration-200 ease-out`}

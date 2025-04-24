@@ -32,17 +32,17 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="text-gray-700">INTERESTS</div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 max-lg:place-items-center gap-2 space-x-2 ">
-            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
+          <div className="flex flex-wrap gap-2">
+            <p className="bg-gray-600/10 rounded-full px-3 py-1 text-sm border border-gray-950/30">
               Tech Startups
             </p>
-            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
+            <p className="bg-gray-600/10 rounded-full px-3 py-1 text-sm border border-gray-950/30">
               UI/UX
             </p>
-            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
+            <p className="bg-gray-600/10 rounded-full px-3 py-1 text-sm border border-gray-950/30">
               Web Animation
             </p>
-            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
+            <p className="bg-gray-600/10 rounded-full px-3 py-1 text-sm border border-gray-950/30">
               Minimalism
             </p>
           </div>
