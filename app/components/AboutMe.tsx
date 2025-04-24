@@ -7,12 +7,12 @@ const AboutMe = () => {
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:12px_12px]"></div>
       <h1
         data-text
-        className="text-7xl font-bold text-center bg-gradient-to-t from-gray-950 via-gray-800 to-gray-950 text-transparent bg-clip-text py-2 w-fit mx-auto"
+        className="max-lg:text-6xl text-7xl font-bold text-center bg-gradient-to-t from-gray-950 via-gray-800 to-gray-950 text-transparent bg-clip-text py-2 w-fit mx-auto"
       >
         About Me
       </h1>
       <section className="grid grid-cols-1 lg:grid-cols-2 place-items-center  lg:space-x-20 w-[95%] lg:w-[85%] xl:w-[70%] mx-auto">
-        <article className="w-[400px] lg:w-[450px] 2xl:w-[550px] bg-white shadow-lg rounded-lg p-6 space-y-8">
+        <article className="sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] bg-white shadow-lg rounded-lg p-6 space-y-8">
           <div>
             <span className="bg-blue-500/20 rounded-full px-3 py-1">
               Who I Am
@@ -32,22 +32,22 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="text-gray-700">INTERESTS</div>
-          <div className="flex items-center space-x-2 ">
-            <p className="bg-gray-600/10 rounded-full px-2 py-1 border border-gray-950/30">
+          <div className="grid grid-cols-2 lg:grid-cols-4 max-lg:place-items-center gap-2 space-x-2 ">
+            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
               Tech Startups
             </p>
-            <p className="bg-gray-600/10 rounded-full px-2 py-1 border border-gray-950/30">
+            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
               UI/UX
             </p>
-            <p className="bg-gray-600/10 rounded-full px-2 py-1 border border-gray-950/30">
+            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
               Web Animation
             </p>
-            <p className="bg-gray-600/10 rounded-full px-2 py-1 border border-gray-950/30">
+            <p className="bg-gray-600/10 rounded-full px-4 h-full text-center py-1 border border-gray-950/30">
               Minimalism
             </p>
           </div>
         </article>
-        <article className="w-[400px] lg:w-[450px] 2xl:w-[550px] bg-white shadow-lg rounded-lg p-6 space-y-8 mt-36">
+        <article className="sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] bg-white shadow-lg rounded-lg p-6 space-y-8 mt-36">
           <div>
             <span className="bg-pink-500/20 rounded-full px-3 py-1">
               What I Do

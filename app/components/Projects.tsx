@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:12px_12px]"></div>
       <h1
         data-text
-        className="text-7xl font-bold text-center bg-gradient-to-t from-gray-950 via-gray-800 to-gray-950 text-transparent bg-clip-text py-2 w-fit mx-auto"
+        className="max-lg:text-6xl text-7xl font-bold text-center bg-gradient-to-t from-gray-950 via-gray-800 to-gray-950 text-transparent bg-clip-text py-2 w-fit mx-auto"
       >
         Projects
       </h1>
@@ -20,7 +20,7 @@ const Projects = () => {
             return (
               <div
                 key={project.id}
-                className="projectCard w-[400px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto 
+                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto 
 "
               >
                 <div className="flex items-center justify-between">
@@ -69,7 +69,7 @@ const Projects = () => {
             return (
               <div
                 key={project.id}
-                className="projectCard w-[400px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto"
+                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto"
               >
                 <div className="flex items-center justify-between">
                   <p
@@ -94,7 +94,7 @@ const Projects = () => {
                 </div>
                 <h4 className="text-sm">TECH</h4>
                 <div className="flex items-center justify-between">
-                  <ul className="flex items-center space-x-4">
+                  <ul className="grid grid-cols-2 lg:grid-cols-3 gap-2 space-x-4">
                     {project.technologies.split(",").map((tech, i) => {
                       return <li key={i}>{tech}</li>;
                     })}

@@ -20,7 +20,7 @@ const Hero = () => {
 
         <h1
           data-text
-          className="text-7xl font-bold bg-gradient-to-t from-gray-950 via-gray-800 to-gray-950 text-transparent bg-clip-text py-2 w-fit"
+          className="max-lg:text-6xl text-7xl font-bold bg-gradient-to-t from-gray-950 via-gray-800 to-gray-950 text-transparent bg-clip-text py-2 w-fit"
         >
           Aymen Dellas
         </h1>
