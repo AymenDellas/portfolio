@@ -18,9 +18,11 @@ const Projects = () => {
           {" "}
           {projects.slice(2, 4).map((project) => {
             return (
-              <div
+              <Link
+                target="_blank"
+                href={project.link}
                 key={project.id}
-                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto 
+                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto cursor-none
 "
               >
                 <div className="flex items-center justify-between">
@@ -54,16 +56,18 @@ const Projects = () => {
                     })}
                   </ul>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </article>
         <article data-cursor-hover className=" max-lg:m-4">
           {projects.slice(0, 2).map((project) => {
             return (
-              <div
+              <Link
+                target="_blank"
+                href={project.link}
                 key={project.id}
-                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto"
+                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto cursor-none"
               >
                 <div className="flex items-center justify-between">
                   <p
@@ -94,7 +98,7 @@ const Projects = () => {
                     })}
                   </ul>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </article>
