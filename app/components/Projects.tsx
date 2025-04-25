@@ -93,13 +93,6 @@ const Projects = () => {
                       return <li key={i}>{tech}</li>;
                     })}
                   </ul>
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    className={`rounded-lg p-1 ${project.color} hover:bg-black/20 transition-all hover:shadow-md duration-200 ease-out`}
-                  >
-                    <ArrowUpRight />
-                  </Link>
                 </div>
               </div>
             );
