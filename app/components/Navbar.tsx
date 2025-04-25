@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import { Mail, Layers, User, Folder, Home } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 const Navbar = () => {
-  const pathname = usePathname();
   const [isOpened, setIsOpened] = useState(false);
   return (
     <nav className="fixed z-50">
@@ -12,28 +11,30 @@ const Navbar = () => {
       <article className="h-screen lg:flex justify-center hidden z-50">
         <ul className="flex flex-col justify-center h-fit my-auto ml-24 space-y-3 py-2 rounded-full  p-1 bg-zinc-800 border border-white/10 text-white">
           <Link
+            data-link
             href="#hero"
-            className={`p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out ${
-              pathname === "/#hero" ? "bg-white/20" : ""
-            }`}
+            className={`p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out cursor-none`}
           >
             <Home />
           </Link>
           <Link
+            data-link
             href="#projects"
-            className="p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out"
+            className="p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out cursor-none"
           >
             <Folder />
           </Link>
           <Link
+            data-link
             href="#skills"
-            className="p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out"
+            className="p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out cursor-none"
           >
             <Layers />
           </Link>
           <Link
+            data-link
             href="#contact"
-            className="p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out"
+            className="p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out cursor-none"
           >
             <Mail />
           </Link>
@@ -75,9 +76,7 @@ const Navbar = () => {
           >
             <Link
               href="#hero"
-              className={`p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out flex items-center space-x-2 ${
-                pathname === "/#hero" ? "bg-white/20" : ""
-              }`}
+              className={`p-2 rounded-full hover:bg-white/20 transition-colors duration-200 ease-out flex items-center space-x-2 `}
             >
               <Home />
               <p>Home</p>

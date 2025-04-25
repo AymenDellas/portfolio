@@ -31,14 +31,10 @@ const ContactSection = () => {
       >
         Contact
       </h1>
-      <article className="flex items-center justify-between rounded-lg shadow-lg bg-white py-4 lg:px-8 max-lg:w-[90%] mx-auto w-[60%]">
-        <div>
-          <h2 className="text-xl lg:text-2xl font-bold">👋 Let's Connect</h2>
-          <p className="lg:text-lg text-gray-700 w-[80%]">
-            Reach out for collaborations or just to say hello!
-          </p>
-        </div>
-        <div className="grid grid-cols-2 gap-2  w-full">
+      <article className="flex flex-col space-y-4 rounded-lg shadow-lg bg-white py-4 lg:px-8 max-lg:w-[90%] mx-auto w-[50%]">
+        <h2 className="text-xl lg:text-2xl font-bold">👋 Let's Connect</h2>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 lg:space-x-2 gap-2  w-full">
           <div
             data-link
             onClick={handleCopy}
