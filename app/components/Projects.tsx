@@ -18,87 +18,93 @@ const Projects = () => {
           {" "}
           {projects.slice(2, 4).map((project) => {
             return (
-              <Link
-                target="_blank"
-                href={project.link}
+              <div
                 key={project.id}
-                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto cursor-none
+                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8  max-lg:mx-auto 
 "
               >
-                <div className="flex items-center justify-between">
-                  <p
-                    className={`${project.color} rounded-full px-2 py-1 text-sm`}
-                  >
-                    {project.category}
-                  </p>
-                  <code>{project.id}</code>
-                </div>
-
-                <h2 className="text-2xl font-bold">{project.title}</h2>
-
-                <p>{project.description}</p>
-
-                <h4 className="text-sm">FEATURES</h4>
-                <div>
-                  {project.features.map((feature, i) => {
-                    return (
-                      <ul key={i} className="flex flex-col">
-                        <li className="list-disc ml-8">{feature}</li>
-                      </ul>
-                    );
-                  })}
-                </div>
-                <h4 className="text-sm">TECH</h4>
-                <div className="flex items-center justify-between">
-                  <ul className="flex items-center space-x-4">
-                    {project.technologies.split(",").map((tech, i) => {
-                      return <li>{tech}</li>;
+                <Link
+                  target="_blank"
+                  href={project.link}
+                  className="cursor-none space-y-4"
+                >
+                  {" "}
+                  <div className="flex items-center justify-between">
+                    <p
+                      className={`${project.color} rounded-full px-2 py-1 text-sm`}
+                    >
+                      {project.category}
+                    </p>
+                    <code>{project.id}</code>
+                  </div>
+                  <h2 className="text-2xl font-bold">{project.title}</h2>
+                  <p>{project.description}</p>
+                  <h4 className="text-sm">FEATURES</h4>
+                  <div>
+                    {project.features.map((feature, i) => {
+                      return (
+                        <ul key={i} className="flex flex-col">
+                          <li className="list-disc ml-8">{feature}</li>
+                        </ul>
+                      );
                     })}
-                  </ul>
-                </div>
-              </Link>
+                  </div>
+                  <h4 className="text-sm">TECH</h4>
+                  <div className="flex items-center justify-between">
+                    <ul className="flex items-center space-x-4">
+                      {project.technologies.split(",").map((tech, i) => {
+                        return <li>{tech}</li>;
+                      })}
+                    </ul>
+                  </div>
+                </Link>
+              </div>
             );
           })}
         </article>
         <article data-cursor-hover className=" max-lg:m-4">
           {projects.slice(0, 2).map((project) => {
             return (
-              <Link
-                target="_blank"
-                href={project.link}
+              <div
                 key={project.id}
-                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8 space-y-4 max-lg:mx-auto cursor-none"
+                className="projectCard sm:w-[380px] w-[350px] lg:w-[450px] 2xl:w-[550px] p-8 bg-white rounded-lg shadow-lg my-8  max-lg:mx-auto "
               >
-                <div className="flex items-center justify-between">
-                  <p
-                    className={`${project.color} rounded-full px-2 py-1 text-sm`}
-                  >
-                    {project.category}
-                  </p>
-                  <code>{project.id}</code>
-                </div>
-                <h2 className="text-2xl font-bold">{project.title}</h2>
-                <p>{project.description}</p>
+                <Link
+                  target="_blank"
+                  href={project.link}
+                  className="space-y-4 cursor-none"
+                >
+                  <div className="flex items-center justify-between">
+                    <p
+                      className={`${project.color} rounded-full px-2 py-1 text-sm`}
+                    >
+                      {project.category}
+                    </p>
+                    <code>{project.id}</code>
+                  </div>
+                  <h2 className="text-2xl font-bold">{project.title}</h2>
+                  <p>{project.description}</p>
 
-                <h4 className="text-sm">FEATURES</h4>
-                <div>
-                  {project.features.map((feature, i) => {
-                    return (
-                      <ul key={i} className="flex flex-col">
-                        <li className="list-disc ml-8">{feature}</li>
-                      </ul>
-                    );
-                  })}
-                </div>
-                <h4 className="text-sm">TECH</h4>
-                <div className="flex items-center justify-between">
-                  <ul className="grid grid-cols-2 lg:grid-cols-3 gap-2 space-x-4">
-                    {project.technologies.split(",").map((tech, i) => {
-                      return <li key={i}>{tech}</li>;
+                  <h4 className="text-sm">FEATURES</h4>
+                  <div>
+                    {project.features.map((feature, i) => {
+                      return (
+                        <ul key={i} className="flex flex-col">
+                          <li className="list-disc ml-8">{feature}</li>
+                        </ul>
+                      );
                     })}
-                  </ul>
-                </div>
-              </Link>
+                  </div>
+                  <h4 className="text-sm">TECH</h4>
+                  <div className="flex items-center justify-between">
+                    <ul className="grid grid-cols-2 lg:grid-cols-3 gap-2 space-x-4">
+                      {project.technologies.split(",").map((tech, i) => {
+                        return <li key={i}>{tech}</li>;
+                      })}
+                    </ul>
+                  </div>
+                </Link>
+              </div>
             );
           })}
         </article>
