@@ -101,7 +101,7 @@ const ContactSection = () => {
           </Link>
           <Link
             data-link
-            href={"https://instagram.com/AymenDellas"}
+            href={"https://instagram.com/aymenx.dev"}
             target="_blank"
             className="bg-green-500/20 rounded-lg shadow-lg border border-gray-700/20 p-4 flex flex-col justify-center relative group cursor-none"
           >
